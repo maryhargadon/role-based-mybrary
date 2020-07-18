@@ -1,0 +1,12 @@
+.container{
+    background-color: lightgreen;
+    padding: 20px;
+    margin-top: 20px;
+    border: solid black;
+}
+body {
+    background: url("/../assets/img/milky-way.jpeg");
+    background-repeat: repeat;
+    background-size: cover;
+    height: 200%;
+}

@@ -6,23 +6,13 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AuthGuard } from './_helpers';
 import { Role } from './_models';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
-    {
-        path: '',
-        component: HomeComponent,
-        canActivate: [AuthGuard]
-    },
-    {
-        path: 'admin',
-        component: AdminComponent,
-        canActivate: [AuthGuard],
-        data: { roles: [Role.Admin] }
-    },
-    {
-        path: 'login',
-        component: LoginComponent
-    },
+    { path: "landing page", component: LandingPageComponent },
+    { path: '', component: HomeComponent, canActivate: [AuthGuard] },
+    { path: 'admin', component: AdminComponent, canActivate: [AuthGuard], data: { roles: [Role.Admin] } },
+    { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }

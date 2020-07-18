@@ -1,6 +1,26 @@
+<body>
+  <div class="page-container">
+      <div class="content-wrap">
+
 <!-- nav -->
-<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
-  <div class="navbar-nav">
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <a class="navbar-brand">Mybrary</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" id="links"> 
+
+    
+
+    <li class="nav-item">
+        <a class="nav-link" href="landing page">Landing Page</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="login">Login</a>
+    </li>
+  </ul>
+</div>
+
+  <div class="navbar-nav" *ngIf="currentUser">
       <a class="nav-item nav-link" routerLink="/">Home</a>
       <a class="nav-item nav-link" routerLink="/admin" *ngIf="isAdmin">Admin</a>
       <a class="nav-item nav-link" (click)="logout()">Logout</a>
@@ -8,16 +28,22 @@
 </nav>
 
 <!-- main app container -->
-<div class="container">
+<!-- <div class="container"> -->
   <router-outlet></router-outlet>
+<!-- </div> -->
+
+<footer class="page-footer font-small cyan darken-3"></footer>
+
 </div>
+</div>
+</body>
 
 <!-- credits -->
-<div class="text-center mt-4">
+<!-- <div class="text-center mt-4">
   <p>
       <a href="https://jasonwatmore.com/post/2019/08/06/angular-8-role-based-authorization-tutorial-with-example" target="_top">Angular 8 - Role Based Authorization Tutorial with Example</a>
   </p>
   <p>
       <a href="https://jasonwatmore.com" target="_top">JasonWatmore.com</a>
   </p>
-</div>
+</div> -->

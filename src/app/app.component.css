@@ -1,0 +1,44 @@
+.bg-dark{
+    background-color: seagreen !important;
+}
+.nav-item{
+    padding-left: 50px;
+}
+
+.navbar-brand {
+    font-size: 45pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Brush Script MT";
+    background-color: lightgreen;
+    border: solid black;
+    margin-left: 20px;
+}
+
+#links a {
+    
+    font-size:15pt;
+}
+
+body {
+    background: url("/../assets/img/milky-way.jpeg");
+    background-repeat: repeat;
+    background-size: cover;
+    height: 200%;
+}
+.page-container {
+    position: relative;
+    min-height: 100vh; 
+}  
+.content-wrap {
+    padding-bottom: 2.5rem; 
+    min-height: 700px;
+    /* background-color: lightblue;    */
+}  
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4.3rem;   
+    background-color: lightgreen;        
+} 

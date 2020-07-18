@@ -1,0 +1,46 @@
+img {
+    width: 770px;
+    height: 550px;
+    padding: 20px;
+    
+}
+
+.row {
+    display: flex;
+}
+
+.col-md-6 {
+    flex: 50%;
+    align-content: center;
+}
+
+.card {
+    background-color: seagreen;
+    border: solid black;
+}
+.card-header {
+    background-color: lightgreen;
+}
+
+.card-deck{
+    padding: 20px;
+    /* width: 80%;   */
+    flex-wrap: wrap;
+    flex: initial; 
+}
+
+
+
+p{
+    font-size: 160%;
+}
+button{
+    border: 1px solid black;
+    background-color: greenyellow;
+}
+ body {
+    background: url("/../assets/img/milky-way.jpeg");
+    background-repeat: repeat;
+    background-size: cover;
+    height: 200%;
+}
