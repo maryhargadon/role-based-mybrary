@@ -13,6 +13,7 @@
                         <div class="col-sm-8 offset-sm-2"> 
                             <!-- <alert></alert>  -->
                             <h2>Login</h2>
+                            
             <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                 <div class="form-group">
                     <label for="username">Username</label>
@@ -37,6 +38,10 @@
                 <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
             </div>
             </form>
+
         </div>
     </div>
 </div>  
+
+
+</body>
