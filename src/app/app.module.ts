@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { BooksComponent } from './books/books.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
