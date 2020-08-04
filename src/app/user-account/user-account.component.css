@@ -1,0 +1,21 @@
+.d-inline-flex{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+
+}
+button{
+    background-color: seagreen;
+}
+.page-container {
+    position: relative;
+    min-height: 100vh; 
+}  
+.content-wrap {
+    padding-bottom: 2.5rem; 
+    min-height: 700px;
+    background-color: khaki;   
+}  
+.flex-end{
+    padding-left: 100px;
+}

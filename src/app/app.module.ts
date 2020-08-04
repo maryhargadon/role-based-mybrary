@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -14,6 +14,20 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BooksComponent } from './books/books.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {
+  MatInputModule,
+  MatPaginatorModule,
+  MatProgressSpinnerModule,
+  MatSortModule,
+  MatTableModule,
+  MatIconModule,
+  MatButtonModule,
+  MatCardModule,
+  MatFormFieldModule } from "@angular/material";
+import { UserAccountComponent } from './user-account/user-account.component';
+import { AlbumsComponent } from './albums/albums.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +37,26 @@ import { BooksComponent } from './books/books.component';
     LoginComponent,
     RegisterComponent,
     LandingPageComponent,
-    BooksComponent
+    BooksComponent,
+    UserAccountComponent,
+    AlbumsComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    appRoutingModule
+    appRoutingModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+  MatTableModule,
+  MatPaginatorModule,
+  MatSortModule,
+  MatProgressSpinnerModule,
+  MatIconModule,
+  MatButtonModule,
+  MatCardModule,
+  MatFormFieldModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
