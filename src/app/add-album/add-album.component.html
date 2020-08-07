@@ -1,0 +1,44 @@
+<div class="page-container">
+    <div class="content-wrap"> 
+  
+  <div class="example-container">
+      <div class="example-loading-shade"
+           *ngIf="isLoadingResults">
+        <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+      </div>
+      <div class="button-row">
+        <a mat-flat-button color="primary" [routerLink]="['/']">Back</a>
+      </div>
+      <mat-card class="example-card">
+        <form [formGroup]="albumForm" (ngSubmit)="onFormSubmit()">
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Title" formControlName="title"
+                   [errorStateMatcher]="matcher">
+            <mat-error>
+              <span *ngIf="!albumForm.get('title').valid && albumForm.get('title').touched">Please enter Title</span>
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Artist" formControlName="artist"
+                   [errorStateMatcher]="matcher">
+            <mat-error>
+              <span *ngIf="!albumForm.get('artist').valid && albumForm.get('artist').touched">Please enter Artist</span>
+            </mat-error>
+          </mat-form-field>
+          
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Genre" formControlName="genre"
+                   [errorStateMatcher]="matcher">
+            <mat-error>
+              <span *ngIf="!albumForm.get('genre').valid && albumForm.get('genre').touched">Please enter Genre</span>
+            </mat-error>
+          </mat-form-field>
+          <div class="button-row">
+            <button type="submit" [disabled]="!albumForm.valid" mat-flat-button color="primary">Save</button>
+          </div>
+        </form>
+      </mat-card>
+    </div>
+  
+    </div>
+    </div>

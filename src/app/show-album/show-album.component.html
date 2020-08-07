@@ -1,0 +1,27 @@
+<div class="page-container">
+    <div class="content-wrap"> 
+  
+  <div class="example-container">
+      <div class="example-loading-shade"
+           *ngIf="isLoadingResults">
+        <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+      </div>
+      <div class="button-row">
+        <a mat-flat-button color="primary" [routerLink]="['/']">Back to Account</a>
+      </div>
+      <mat-card class="example-card">
+        <mat-card-content>
+          <h4>{{album.title}}</h4>
+          <h4>{{album.artist}}</h4>
+          <h4>{{album.genre}}</h4>
+        </mat-card-content>
+        
+        <mat-card-actions>
+          <a mat-flat-button color="primary" [routerLink]="['/edit-album', album._id]">Edit</a>
+          <a mat-flat-button color="warn" (click)="deleteAlbum(album._id)">Delete</a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  
+    </div>
+    </div>

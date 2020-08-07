@@ -8,6 +8,11 @@ import { AuthGuard } from './_helpers';
 import { Role } from './_models';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 
+import { AlbumsComponent } from './albums/albums.component';
+import { AddAlbumComponent } from './add-album/add-album.component';
+import { ShowAlbumComponent } from './show-album/show-album.component';
+import { EditAlbumComponent } from './edit-album/edit-album.component';
+
 const routes: Routes = [
     { path: "landing page", component: LandingPageComponent },
     { path: '', component: HomeComponent, canActivate: [AuthGuard] },
@@ -15,7 +20,12 @@ const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     // otherwise redirect to home
-    { path: '**', redirectTo: '' }
+    { path: '**', redirectTo: '' },
+
+    { path: 'albums', component: AlbumsComponent, data: { title: 'Albums' } },
+  { path: 'show-album/:id', component: ShowAlbumComponent, data: { title: 'Show Album' } },
+  { path: 'add-album', component: AddAlbumComponent, data: { title: 'Add Album' } },
+  { path: 'edit-album/:id', component: EditAlbumComponent, data: { title: 'Edit Album' } },
 ];
 
 export const appRoutingModule = RouterModule.forRoot(routes);

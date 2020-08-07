@@ -1,0 +1,36 @@
+.example-container {
+    position: relative;
+    padding: 40px;
+    width: 50%;
+  }
+  
+  .example-loading-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 56px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mat-flat-button {
+    margin: 5px;
+    
+  }
+
+  .d-inline-flex{
+    padding-left: 40px;
+  }
+  .page-container {
+    position: relative;
+    min-height: 100vh; 
+}  
+.content-wrap {
+    padding-bottom: 2.5rem; 
+    min-height: 700px;
+    background-color: khaki;   
+}  

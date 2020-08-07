@@ -28,6 +28,9 @@ import {
   MatFormFieldModule } from "@angular/material";
 import { UserAccountComponent } from './user-account/user-account.component';
 import { AlbumsComponent } from './albums/albums.component';
+import { AddAlbumComponent } from './add-album/add-album.component';
+import { ShowAlbumComponent } from './show-album/show-album.component';
+import { EditAlbumComponent } from './edit-album/edit-album.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { AlbumsComponent } from './albums/albums.component';
     LandingPageComponent,
     BooksComponent,
     UserAccountComponent,
-    AlbumsComponent
+    AlbumsComponent,
+    AddAlbumComponent,
+    ShowAlbumComponent,
+    EditAlbumComponent
   ],
   imports: [
     BrowserModule,
