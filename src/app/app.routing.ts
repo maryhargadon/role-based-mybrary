@@ -1,4 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
 
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
@@ -28,4 +29,9 @@ const routes: Routes = [
   { path: 'edit-album/:id', component: EditAlbumComponent, data: { title: 'Edit Album' } },
 ];
 
+// @NgModule({
+//     imports: [RouterModule.forRoot(routes)],
+//     exports: [RouterModule]
+//   })
+//   export class AppRoutingModule { }
 export const appRoutingModule = RouterModule.forRoot(routes);

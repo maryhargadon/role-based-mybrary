@@ -7,7 +7,7 @@
         <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
       </div>
       <div class="button-row">
-        <a mat-flat-button color="accent" (click)="albumDetails()">Info</a>
+        <a mat-flat-button color="primary" (click)="albumDetails()">Info</a>
       </div>
       <mat-card class="example-card">
         <form [formGroup]="albumForm" (ngSubmit)="onFormSubmit()">
